@@ -74,6 +74,42 @@
             --btn-clear-bg: #d32f2f;
         }
 
+        .theme-purple {
+            --calc-bg: #f3e5f5;
+            --btn-number-bg: white;
+            --btn-operator-bg: #ba68c8;
+            --btn-function-bg: #ab47bc;
+            --btn-equals-bg: #8e24aa;
+            --btn-clear-bg: #c62828;
+        }
+
+        .theme-mint {
+            --calc-bg: #e0f2f1;
+            --btn-number-bg: white;
+            --btn-operator-bg: #4db6ac;
+            --btn-function-bg: #26a69a;
+            --btn-equals-bg: #00897b;
+            --btn-clear-bg: #d32f2f;
+        }
+
+        .theme-rose {
+            --calc-bg: #fce4ec;
+            --btn-number-bg: white;
+            --btn-operator-bg: #f06292;
+            --btn-function-bg: #ec407a;
+            --btn-equals-bg: #d81b60;
+            --btn-clear-bg: #c62828;
+        }
+
+        .theme-forest {
+            --calc-bg: #e8f5e9;
+            --btn-number-bg: white;
+            --btn-operator-bg: #66bb6a;
+            --btn-function-bg: #4caf50;
+            --btn-equals-bg: #388e3c;
+            --btn-clear-bg: #d32f2f;
+        }
+
         .theme-selector {
             position: absolute;
             top: 20px;
@@ -84,6 +120,8 @@
             padding: 10px;
             border-radius: 8px;
             box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            flex-wrap: wrap;
+            max-width: 300px;
         }
 
         .theme-btn {
@@ -118,6 +156,22 @@
 
         .theme-btn-sunset {
             background: linear-gradient(135deg, #ffb74d 50%, #f57c00 50%);
+        }
+
+        .theme-btn-purple {
+            background: linear-gradient(135deg, #ba68c8 50%, #8e24aa 50%);
+        }
+
+        .theme-btn-mint {
+            background: linear-gradient(135deg, #4db6ac 50%, #00897b 50%);
+        }
+
+        .theme-btn-rose {
+            background: linear-gradient(135deg, #f06292 50%, #d81b60 50%);
+        }
+
+        .theme-btn-forest {
+            background: linear-gradient(135deg, #66bb6a 50%, #388e3c 50%);
         }
 
         .display-container {
@@ -289,6 +343,10 @@
         <div class="theme-btn theme-btn-dark" onclick="changeTheme('dark')" title="Темная"></div>
         <div class="theme-btn theme-btn-ocean" onclick="changeTheme('ocean')" title="Океан"></div>
         <div class="theme-btn theme-btn-sunset" onclick="changeTheme('sunset')" title="Закат"></div>
+        <div class="theme-btn theme-btn-purple" onclick="changeTheme('purple')" title="Фиолетовая"></div>
+        <div class="theme-btn theme-btn-mint" onclick="changeTheme('mint')" title="Мята"></div>
+        <div class="theme-btn theme-btn-rose" onclick="changeTheme('rose')" title="Роза"></div>
+        <div class="theme-btn theme-btn-forest" onclick="changeTheme('forest')" title="Лес"></div>
     </div>
 
     <div class="calculator-container theme-default" id="calculatorContainer">
